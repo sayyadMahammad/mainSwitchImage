@@ -2,6 +2,9 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.gms.google-services'
+    id("com.google.firebase.appdistribution")
+
+
 }
 
 android {
@@ -21,6 +24,20 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            firebaseAppDistribution{
+                appId="1:765296637053:android:2244502d2c0a92055fad14"
+                releaseNotes="Testing distribution from gradle file"
+                testers="sayyadmd62847@gmail.com"
+//                groupsFile="path/to/groups.txt"
+            }
+        }
+        debug {
+            firebaseAppDistribution{
+                appId="1:765296637053:android:2244502d2c0a92055fad14"
+                releaseNotes="Testing distribution from gradle file"
+               testers="sayyadmd62847@gmail.com"
+//                groupsFile="path/to/groups.txt"
+            }
         }
     }
     compileOptions {

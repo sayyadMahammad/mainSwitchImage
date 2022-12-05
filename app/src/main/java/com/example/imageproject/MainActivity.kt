@@ -27,19 +27,19 @@ class MainActivity : AppCompatActivity() {
         image1 = findViewById(R.id.imageView1)
         image2 = findViewById(R.id.imageView2)
         image1.setImageResource(R.drawable.first_image)
-        image2.setImageResource(R.drawable.second_image)
+        image2.setImageResource(R.drawable.third_image)
         var temp = true
 
         press.setOnClickListener {
             if (temp) {
                 temp = false
-                image1.setImageResource(R.drawable.second_image)
+                image1.setImageResource(R.drawable.third_image)
                 image2.setImageResource(R.drawable.first_image)
 
             } else {
                 temp = true
                 image1.setImageResource(R.drawable.first_image)
-                image2.setImageResource(R.drawable.second_image)
+                image2.setImageResource(R.drawable.third_image)
             }
         }
     }
