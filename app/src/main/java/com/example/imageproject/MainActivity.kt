@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         press = findViewById(R.id.button2)
         image1 = findViewById(R.id.imageView1)
         image2 = findViewById(R.id.imageView2)
-        image1.setImageResource(R.drawable.first_image)
+        image1.setImageResource(R.drawable.second_image)
         image2.setImageResource(R.drawable.third_image)
         var temp = true
 
